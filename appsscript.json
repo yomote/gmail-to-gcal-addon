@@ -1,0 +1,34 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/calendar"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Add to Calendar from Gmail",
+      "logoUrl": "https://raw.githubusercontent.com/yomote/gmail-to-gcal-addon/refs/heads/main/logo.png",
+      "layoutProperties": {
+        "primaryColor": "#1a73e8"
+      }
+    },
+    "gmail": {
+      "contextualTriggers": [
+        {
+          "unconditional": {},
+          "onTriggerFunction": "onGmailMessageOpen"
+        }
+      ],
+      "openLinkUrlPrefixes": [
+        "https://calendar.google.com",
+        "https://mail.google.com"
+      ]
+    }
+  },
+  "dependencies": {
+    "enabledAdvancedServices": []
+  },
+  "runtimeVersion": "V8"
+}
