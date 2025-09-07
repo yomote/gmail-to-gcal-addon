@@ -39,7 +39,7 @@
 
 ## 開発環境について
 
-このプロジェクトは、[Google Apps Script用のモダンな開発環境を提供する**App Script in IDE (ASIDE)](https://github.com/google/aside/tree/main)を使用しています。
+このプロジェクトは、Google Apps Script用のモダンな開発環境を提供する[App Script in IDE (ASIDE)](https://github.com/google/aside/tree/main)を使用しています。
 
 ## 使い方（操作フロー）
 
